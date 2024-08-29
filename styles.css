@@ -1,0 +1,595 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; /* Applying a default font-family */
+}
+
+.navbar {
+  background-color: #030f1c;
+  padding: 5px; /* Reduced padding for better layout */
+  position: relative; /* Ensure positioning for suggestions box */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Align items vertically */
+  flex-wrap: wrap; /* Wrap items to next line if needed */
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Updated color to be visible on dark background */
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  color: #01060c;
+}
+
+.search-bar {
+  padding: 5px;
+  border: none; /* Optional: Remove border for cleaner look */
+  border-radius: 3px; /* Optional: Rounded corners for input */
+}
+
+#search-button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #fa9805;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #fe8504;
+}
+
+.navbar {
+  padding: 10px 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-and-button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fast-delivery-text {
+  font-size: 200px; /* Adjust font size as needed */
+  font-weight: bold;
+  margin-bottom: 0; /* Remove margin if necessary */
+  line-height: 1.1; /* Reduce line-height to bring lines closer */
+}
+
+.fastest-text {
+  color:#f07e04; 
+  font-size: 50px; /* Increase font size if needed */
+  font-weight: bold; /* Make text bold */
+  font-style: italic; /* Make text italic */
+  display: block; /* Ensure it occupies its own line */
+  margin-bottom: 0; /* Remove margin below the "Fastest" text */
+}
+
+.delivery-text {
+  color: #0e0d0df5; 
+  font-size: 90px;
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+.in-text {
+   color:#f07e04; 
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+.your-city-text {
+  color: #0e0d0df5; 
+  font-size: 50px; /* Adjust font size to match or be appropriate */
+  font-weight: bold; /* Make text bold */
+  font-style: italic; /* Make text italic */
+  display: block; /* Ensure it occupies its own line */
+  margin-top: 0; /* Remove margin above the "Delivery in Your City" text */
+  line-height: 1.5; /* Reduce line-height to bring lines closer */
+}
+
+
+.sub-text {
+  color: #f58210f5; /* Orange color */
+  font-size: 10px; /* Adjust font size as needed */
+
+}
+
+.order-now-button {
+  background-color: #f88409e4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.order-now-button:hover {
+  background-color: #d06e08;
+}
+.spiral-arrow {
+  margin-left: 20px; /* Adjust spacing between button and arrow */
+  width: 50px; /* Adjust size of the arrow */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.food-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+}
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px; /* Adjust width as needed */
+  margin: 10px; /* Space between items */
+}
+
+.food-img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+.food-info {
+  text-align: center;
+  margin-top: 5px; /* Space between image and text */
+}
+
+.food-name {
+  font-size: 14px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #333; /* Text color */
+}
+
+.food-price {
+  font-size: 12px; /* Adjust font size as needed */
+  color: #f07e04; /* Orange color for price */
+}
+
+
+/* Popular Items Heading */
+.popular-items-heading {
+  font-size: 36px; /* Adjust font size as needed */
+  font-weight: bold;
+  margin-top: 30px; /* Space above the heading */
+  margin-bottom: 30px; /* Space below the heading */
+  color: #ff8e05; /* Text color */
+}
+
+.category-section {
+  padding-top: 80px; /* Prevent content from being hidden behind the fixed navbar */
+}
+
+.small-img {
+  width: 100%;
+  height: auto;
+}
+.cart-icon i {
+  margin-left: 20px;
+  color: #f88409e4;
+}
+
+
+.search-bar {
+  padding: 5px;
+}
+
+/* Style for the back to top icon */
+.up-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: none; /* No background color */
+  color: #f88409e4; /* Orange color for the icon */
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  z-index: 1000; /* Ensure it appears on top of other content */
+}
+
+.up-icon:hover {
+  color: #d06e08; /* Darker orange on hover */
+}
+
+.up-icon i {
+  font-size: 24px; /* Adjust the size of the icon if needed */
+}
+
+
+
+#info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px; /* Space between the items */
+  text-align: center;
+}
+
+#info div {
+  flex: 1;
+}
+
+#info i {
+  color: orange; /* Set icon color to orange */
+}
+/* Basic styling for the items */
+.popular-items {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.col.filter-item {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+.see-more-button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+/* See Less Button */
+#see-less-btn {
+  background-color: #f4ba0bef;
+  border-color: #6c757d;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#see-less-btn:hover {
+  background-color: #5a6268;
+  border-color: #5a6268;
+}
+
+
+.hidden-items-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 15px; 
+  text-align: center; 
+}
+
+.hidden-item {
+  display: none; 
+  text-align: center; 
+}
+
+.hidden-item.visible {
+  display: inline-block; 
+  vertical-align: top;
+  width: calc(25% - 15px);
+  text-align: center;
+}
+
+
+.shop-item-image {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto; 
+}
+
+
+#category{
+  padding: 5% 6%;
+}
+#product-cards{
+  padding: 5% 10%;
+}
+
+
+.filter-btns{
+  text-align: center;
+}
+.filter-btn{
+  background: none;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 10px 30px;
+  font-size: 16px;
+  color: #d3d3d3;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.filter-btn::after{
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #555;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out
+}
+.filter-btn:hover{
+  color: #555;
+}
+.filter-btn:hover::after{
+  width: 100%;
+}
+/* active button */
+.active-btn{
+  color: #555;
+}
+.active-btn::after{
+  width: 100%;
+}
+
+.canvas-title{
+  text-align: center;
+}
+
+
+
+/*     Shopping Cart     */
+
+ .btn-purchase{
+   text-align: center;
+   margin: auto;
+   padding: 2%;
+   width: 50%;
+ }
+
+ #shopping-cart{
+   padding: 10% 10%;
+ }
+
+ .cart-total{
+   text-align: right;
+   font-size: 1.3rem;
+ }
+
+.up-icon{
+   color: black;
+   position: fixed;
+   float: right;
+   z-index: 1;
+   left: 95%;
+   top: 85%;
+   font-size: 2rem;
+ }
+ 
+ .testimonials {
+  background-color: black; /* Black background */
+  color: white; /* White text color */
+  padding: 2.5rem; /* Padding around the section (40px equivalent) */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between image and form */
+  border-radius: 1.25rem; /* Rounded corners for the section (20px equivalent) */
+  overflow: hidden; /* Ensure child elements don't overflow */
+  margin-bottom: 2.5rem; /* Add space below the testimonials section (40px equivalent) */
+}
+
+
+.testimonials h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial p {
+  max-width: 400px;
+  text-align: left;
+}
+.testimonial img {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  border-radius: 50%; /* Makes the image round */
+}
+.why-choose-us {
+  background-color:#fffdf9e4;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgb(254, 252, 250);
+}
+
+.why-choose-us h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.why-items {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.why-item {
+  width: 200px;
+  text-align: center;
+}
+
+.why-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* Newsletter Subscription Section */
+.newsletter {
+  background-color: black; /* Black background */
+  color: white; /* White text color */
+  padding: 40px; /* Padding around the section */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between image and form */
+  border-radius: 20px; /* Rounded corners for the section */
+  overflow: hidden; /* Ensure child elements don't overflow */
+}
+
+.newsletter img {
+  height: 100%; /* Full height of the section */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area without stretching */
+  border-radius: 20px; /* Rounded corners for the image to match the section */
+  margin-right: 20px; /* Space between image and form */
+  
+}
+
+.subscribe {
+  max-width: 400px; /* Maximum width for the subscription form */
+  text-align: center; /* Center text within the form */
+}
+
+.subscribe h2 {
+  margin-bottom: 20px; /* Space below the heading */
+  font-weight: bold; /* Bold text */
+  font-size: 24px; /* Font size for the heading */
+}
+
+.subscribe input[type="email"] {
+  padding: 10px; /* Padding inside the input field */
+  width: 100%; /* Full width of the container */
+  margin-bottom: 10px; /* Space below the input field */
+  border-radius: 4px; /* Rounded corners for the input field */
+  border: none; /* Remove border */
+  font-size: 16px; /* Font size for the input field */
+}
+
+.subscribe-button {
+  background-color: orange; /* Background color for the button */
+  color: white; /* Text color for the button */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding inside the button */
+  cursor: pointer; /* Cursor pointer on hover */
+  font-size: 16px; /* Font size for the button */
+  border-radius: 4px; /* Rounded corners for the button */
+}
+footer {
+  background-color: #fffcfc;
+  padding: 2rem 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.footer-section:last-child {
+  margin-right: 0;
+}
+
+.logo-description img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.logo-description p {
+  color: #020202;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.social-icons a:hover {
+  color: #ff6600;
+}
+
+.footer-section h3 {
+  color: #141313;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+  color: #000000;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6600;
+}
